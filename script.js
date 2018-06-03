@@ -28,8 +28,8 @@ var Counter = React.createClass({
 
     return React.createElement('div', {className: 'numerator'}, 
       React.createElement('p', {className: 'number'}, this.state.counter),
-      React.createElement('button', {onClick: this.decrement}, 'Add 1'),
-      React.createElement('button', {onClick: this.increment}, 'minus 1')
+      React.createElement('button', {onClick: this.increment}, 'Add 1'),
+      React.createElement('button', {onClick: this.decrement}, 'minus 1')
     );
   },
 
