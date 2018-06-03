@@ -1,0 +1,10 @@
+#app{
+  display:flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.number{
+  font-size: 5rem;
+}
