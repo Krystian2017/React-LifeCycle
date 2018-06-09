@@ -1,4 +1,8 @@
 var Counter = React.createClass({
+getDefaultProps: function() {
+  console.log('getDefaultProps: ustawienie wartości domyślnych propsów')
+};
+
   getInitialState: function() {
     console.log('getInitialState: stan początkowy');
 
@@ -35,7 +39,27 @@ var Counter = React.createClass({
 
   componentDidMount() {
     console.log('componentDidMount: po renderowaniu.')
-  }
+  },
+
+  componentWillReceiveProps() {
+    console.log('componentWillReceiveProps: komponent otrymał nowe właściwości')
+  },
+
+  shouldComponentUpdate() {
+    console.log('shouldComponentUpdate: sprawdzanie komponentu')
+  },
+
+  componentWillUpdate() {
+    console.log('componentWillUpdate: przygotowanie na nadchodzące zmiany')
+  },
+
+  componentDidUpdate() {
+    console.log('componentDidUpdate: manipulacje DOM')
+  },
+
+  componentWillUnmount() {
+    console.log('componentWillUnmount: koniec komponentu')
+  },
 });
 
 var element = React.createElement('div', {},
