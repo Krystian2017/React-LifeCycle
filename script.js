@@ -1,7 +1,7 @@
 var Counter = React.createClass({
-getDefaultProps: function() {
-  console.log('getDefaultProps: ustawienie wartości domyślnych propsów')
-};
+  getDefaultProps: function() {
+  console.log('getDefaultProps: ustawienie wartości domyślnych propsów');
+},
 
   getInitialState: function() {
     console.log('getInitialState: stan początkowy');
