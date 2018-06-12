@@ -46,6 +46,7 @@ var Counter = React.createClass({
   },
 
   shouldComponentUpdate() {
+    return true;
     console.log('shouldComponentUpdate: sprawdzanie komponentu')
   },
 
